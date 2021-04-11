@@ -1,0 +1,33 @@
+.thirdParty-login {
+  border: 1px solid #150e56;
+  width: auto;
+  display: inline-block;
+  padding: 40px;
+  border-radius: 3px;
+}
+.thirdParty-login h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #150e56;
+  margin-bottom: 40px;
+}
+
+p.login-continue {
+  border: 1px solid #150e56;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #150e56;
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.icon-inner {
+  position: absolute;
+  font-size: 25px;
+  left: 15px;
+  top: 18px;
+}

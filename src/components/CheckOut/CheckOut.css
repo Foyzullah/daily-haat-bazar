@@ -1,0 +1,22 @@
+.check-out table {
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd !important;
+  text-align: left;
+  padding: 8px;
+}
+
+.check-out h2 {
+  text-align: left;
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+
+.check-out table {
+  margin-bottom: 25px;
+}
+
+.check-out {
+  text-align: right;
+}

@@ -1,0 +1,15 @@
+.single-product {
+  height: 400px;
+  margin-bottom: 30px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 2px;
+}
+.single-product img {
+  width: 200px;
+  margin-bottom: 24px;
+  height: 200px;
+}
+.single-product button{
+  margin-top: 10px;
+}

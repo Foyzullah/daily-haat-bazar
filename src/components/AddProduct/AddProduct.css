@@ -1,0 +1,40 @@
+.add-product-form {
+  background-color: #3c415c;
+  color: #fff;
+  text-align: left;
+  padding: 25px;
+}
+
+.add-product-form input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.add-product-form h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.add-product-form label {
+  font-weight: bold;
+}
+input:focus {
+  outline: none;
+}
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+input[type="file"] {
+  padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .dash-bar {
+    margin-bottom: 10px;
+    height: auto !important;
+  }
+}
