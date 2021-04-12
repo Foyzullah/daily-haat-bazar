@@ -7,22 +7,23 @@ const CheckOut = () => {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [loggedInClient, seLoggedInClient] = useContext(UserContext);
-  // console.log(loggedInClient);
 
   useEffect(() => {
-    fetch(`http://localhost:5055/product/${id}`)
+    fetch(`https://tranquil-citadel-18239.herokuapp.com/product/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);
       });
   }, [id]);
+
   const { productName, productPrice } = product;
   delete product._id;
+
   const handleCheckout = () => {
     const orderDate = new Date().toDateString("MM/dd/yyy");
 
     const newOrder = { ...loggedInClient, ...product, orderDate: orderDate };
-    const url = `http://localhost:5055/addOrder`;
+    const url = `https://tranquil-citadel-18239.herokuapp.com/addOrder`;
     fetch(url, {
       method: "POST",
       headers: {

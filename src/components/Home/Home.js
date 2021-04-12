@@ -6,7 +6,7 @@ const Home = () => {
   const [loaderSpinner, setLoaderSpinner] = useState(true);
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5055/allProducts`)
+    fetch(`https://tranquil-citadel-18239.herokuapp.com/allProducts`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

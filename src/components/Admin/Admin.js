@@ -1,10 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFileUpload,
-  faTasks,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faPlus } from "@fortawesome/free-solid-svg-icons";
 import {
   BrowserRouter as Router,
   Link,

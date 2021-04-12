@@ -29,7 +29,7 @@ const AddProduct = () => {
       productPrice: data.price,
       productImageUrl: imageUrl,
     };
-    const url = `http://localhost:5055/addProduct`;
+    const url = `https://tranquil-citadel-18239.herokuapp.com/addProduct`;
     fetch(url, {
       method: "POST",
       headers: {

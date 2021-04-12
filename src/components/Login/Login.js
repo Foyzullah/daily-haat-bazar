@@ -6,8 +6,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "./firebase.config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faFileUpload } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -22,12 +21,6 @@ const Login = () => {
   const location = useLocation();
 
   let { from } = location.state || { from: { pathname: "/" } };
-
-  // const handleErro = (error) => {
-  //   const newClientInfo = { ...client };
-  //   newClientInfo.error = error.message;
-  //   setClient(newClientInfo);
-  // };
 
   const googleProvider = new firebase.auth.GoogleAuthProvider();
   const handleGoogleSignIn = () => {
@@ -45,22 +38,6 @@ const Login = () => {
       });
   };
 
-  // const facebookProvider = new firebase.auth.FacebookAuthProvider();
-  // const handleFacebookSignIn = () => {
-  //   firebase
-  //     .auth()
-  //     .signInWithPopup(facebookProvider)
-  //     .then((res) => {
-  //       const clietnInformation = { ...res.user };
-  //       clietnInformation.error = "";
-  //       clietnInformation.success = true;
-  //       setLoggedInClient(clietnInformation);
-  //       history.replace(from);
-  //     })
-  //     .catch((error) => {
-  //       handleErro(error);
-  //     });
-  // };
   return (
     <div className="container">
       <div className="row">
@@ -71,10 +48,6 @@ const Login = () => {
               <FontAwesomeIcon className="icon-inner" icon={faGoogle} />
               Continue with google
             </p>
-            {/* <p className="login-continue" onClick={handleFacebookSignIn}>
-              <FontAwesomeIcon className="icon-inner" icon={faFacebookF} />
-              Continue with Facebook
-            </p> */}
           </div>
         </div>
       </div>

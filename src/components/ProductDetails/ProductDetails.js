@@ -7,7 +7,7 @@ const ProductDetails = (props) => {
   const { _id, productName, productWight, productPrice } = props.product;
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5055/deleteProduct/${id}`, {
+    fetch(`https://tranquil-citadel-18239.herokuapp.com/deleteProduct/${id}`, {
       method: "DELETE",
     });
   };
